@@ -1,8 +1,8 @@
 {
-  "name": "node_finantial",
+  "name": "node_financial",
   "private": true,
   "version": "0.0.0",
-  "description": "a Sails application",
+  "description": "a Sails Financial Application",
   "keywords": [],
   "dependencies": {
     "ejs": "2.3.4",
@@ -21,7 +21,8 @@
     "include-all": "~0.1.6",
     "rc": "1.0.1",
     "sails": "~0.12.3",
-    "sails-disk": "~0.10.9"
+    "sails-disk": "~0.10.9",
+    "sails-mysql": "^0.11.5"
   },
   "scripts": {
     "debug": "node debug app.js",
@@ -30,8 +31,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/eduardolf/node_finantial.git"
+    "url": "git://github.com/eddy85br/node_financial.git"
   },
-  "author": "eduardolf",
+  "author": "eddy85br",
   "license": ""
 }
