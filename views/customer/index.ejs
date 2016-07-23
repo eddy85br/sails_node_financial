@@ -1,0 +1,25 @@
+<h3>Customers</h3>
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Name</th>
+    <th>E-mail</th>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </thead>
+  <tbody>
+    <% _.each(customers, function (customer) { %>
+      <tr data-id="<%= customer.id %>" data-model="customer">
+        <td><%= customer.id %></td>
+        <td><%= customer.name %></td>
+        <td><%= customer.email %></td>
+        <td><%= customer.state %></td>
+        <td><a href="/customer/show/<%= customer.id %>">Show</a></td>
+        <td><a href="/customer/edit/<%= customer.id %>">Edit</a></td>
+        <td><a href="/customer/destroy/<%= customer.id %>">Delete</a></td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
